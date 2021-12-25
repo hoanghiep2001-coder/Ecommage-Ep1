@@ -1,6 +1,3 @@
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
-
 const app = {
     Galleries: [
         {
@@ -27,7 +24,7 @@ const app = {
             `;
         })
 
-        $('.body__container-gallery-row').innerHTML = htmls.join("")
+        document.querySelector('.body__container-gallery-row').innerHTML = htmls.join("")
     },
     handleEvent: function () {
 
